@@ -1,0 +1,12 @@
+database:
+  host: 127.0.0.1
+  port: 3006
+  username: root
+  password: pass
+  database: server
+
+cooldown-teleport: 5 # Cooldown in seconds
+
+see-particles: true # Show particles when teleporting
+particle-type: "HEART" # Particle type
+sound-type: "ENTITY_PLAYER_LEVELUP" # Sound when teleporting
