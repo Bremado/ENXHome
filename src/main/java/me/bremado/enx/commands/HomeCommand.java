@@ -75,7 +75,7 @@ public class HomeCommand implements CommandExecutor {
             var sound = getSound(ServerConfig.getSoundType());
 
             if (particle != null) {
-                player.getWorld().spawnParticle(particle, location, new Random().nextInt(5));
+                player.getWorld().spawnParticle(particle, location.clone().add(0.0, 2.0, 0.0), new Random().nextInt(5));
             } else {
                 Bukkit.getLogger().info("§cParticle not found: " + ServerConfig.getParticleType());
             }
